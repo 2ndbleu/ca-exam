@@ -109,7 +109,7 @@ def parse_args(args):
             elif args[index] == '-b':
                 try:
                     k = int(args[index + 1])
-                except ValuelError:
+                except ValueError:
                     print("Invalid btb size '%s'" % args[index + 1])
                     return None
                 index += 2
